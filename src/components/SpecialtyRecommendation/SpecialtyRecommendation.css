@@ -1,0 +1,12 @@
+.recommendation-card {
+  background: #ffffff;
+  border: 1.5px solid #bae6fd;
+  border-radius: 1.75rem;
+  box-shadow: 0 15px 40px -10px rgba(2, 132, 199, 0.12);
+  transition: all 0.3s ease;
+}
+
+.specialty-badge {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+}

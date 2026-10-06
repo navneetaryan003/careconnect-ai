@@ -1,0 +1,70 @@
+.date-card {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.date-card:hover {
+  border-color: #7dd3fc;
+  background: #f0f9ff;
+}
+
+.date-card.active {
+  border-color: #0284c7;
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
+}
+
+.date-card.active .date-subtext {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.slot-btn {
+  padding: 0.75rem 1rem;
+  border-radius: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.slot-btn.available {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.slot-btn.available:hover {
+  border-color: #0284c7;
+  color: #0284c7;
+  background: #f0f9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+}
+
+.slot-btn.selected {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.28);
+  transform: translateY(-2px);
+}
+
+.slot-btn.booked {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.75;
+}

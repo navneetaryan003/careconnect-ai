@@ -1,0 +1,38 @@
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #0284C7;
+  background-color: rgba(240, 249, 255, 0.6);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #0284C7;
+  transition: all 0.25s ease;
+  transform: translateX(-50%);
+  border-radius: 9999px;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
